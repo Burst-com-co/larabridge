@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::resource('compatibility/conveyor/american', 'Compatibility\Conveyor\AmericanLogisticsController');
+Route::resource('compatibility/asterisk', 'Compatibility\Asterisk\AsteriskController');

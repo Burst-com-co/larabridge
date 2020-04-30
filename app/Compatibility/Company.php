@@ -16,4 +16,8 @@ class Company extends Model
     {
         return $this->hasMany('App\Compatibility\Conveyor\AmericanLogisticGuide', 'company_id');
     }
+    public function asterisk()
+    {
+        return $this->hasOne('App\Compatibility\Asterisk\Asterisk', 'company_id','id');
+    }
 }
